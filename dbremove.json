@@ -1,0 +1,29 @@
+{
+  "deleted": [
+    {
+      "task": "Another task",
+      "id": 3,
+      "done": false
+    },
+    {
+      "task": "Another task",
+      "id": 6,
+      "done": false
+    },
+    {
+      "task": "Another task",
+      "id": 5,
+      "done": false
+    },
+    {
+      "task": "Another task",
+      "id": 4,
+      "done": true
+    },
+    {
+      "task": "Next task",
+      "id": 3,
+      "done": false
+    }
+  ]
+}
