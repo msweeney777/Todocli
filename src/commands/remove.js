@@ -1,11 +1,13 @@
 const {Command, flags} = require('@oclif/command')
 const {Todo} = require('../db')
+const {deleted} = require('../dbremove');
 
 class RemoveCommand extends Command {
   async run() {
     const {
       flags : {id},
     } = this.parse(RemoveCommand)
+    const del = await deleted.push(Todo.find({id: parseInt(id, 10)})).write();
     const res = await Todo.remove({id: parseInt(id, 10)}).write();
     this.log(res);
   }

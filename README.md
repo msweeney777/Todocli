@@ -29,7 +29,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`todocli add`](#todocli-add)
-* [`todocli hello`](#todocli-hello)
+* [`todocli deleted`](#todocli-deleted)
 * [`todocli help [COMMAND]`](#todocli-help-command)
 * [`todocli remove`](#todocli-remove)
 * [`todocli show`](#todocli-show)
@@ -53,13 +53,13 @@ DESCRIPTION
 
 _See code: [src/commands/add.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/add.js)_
 
-## `todocli hello`
+## `todocli deleted`
 
 Describe the command here
 
 ```
 USAGE
-  $ todocli hello
+  $ todocli deleted
 
 OPTIONS
   -n, --name=name  name to print
@@ -69,7 +69,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/hello.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/hello.js)_
+_See code: [src/commands/deleted.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/deleted.js)_
 
 ## `todocli help [COMMAND]`
 
@@ -90,18 +90,18 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6
 
 ## `todocli remove`
 
-Describe the command here
+Removes a task by id
 
 ```
 USAGE
   $ todocli remove
 
 OPTIONS
-  -n, --name=name  name to print
+  -n, --id=id  (required) task id
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Removes a task permanently from database by id
 ```
 
 _See code: [src/commands/remove.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/remove.js)_
