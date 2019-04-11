@@ -1,0 +1,9 @@
+{
+  "todos": [
+    {
+      "task": "Cool task",
+      "id": 0,
+      "done": true
+    }
+  ]
+}
