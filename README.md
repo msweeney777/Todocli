@@ -31,6 +31,7 @@ USAGE
 * [`todocli add`](#todocli-add)
 * [`todocli completed`](#todocli-completed)
 * [`todocli deleted`](#todocli-deleted)
+* [`todocli edit`](#todocli-edit)
 * [`todocli help [COMMAND]`](#todocli-help-command)
 * [`todocli remove`](#todocli-remove)
 * [`todocli show`](#todocli-show)
@@ -56,18 +57,15 @@ _See code: [src/commands/add.js](https://github.com/msweeney777/todocli/blob/v0.
 
 ## `todocli completed`
 
-Describe the command here
+Shows completed tasks
 
 ```
 USAGE
   $ todocli completed
 
-OPTIONS
-  -n, --name=name  name to print
-
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Shows all the tasks that have been completed
 ```
 
 _See code: [src/commands/completed.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/completed.js)_
@@ -86,6 +84,24 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/deleted.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/deleted.js)_
+
+## `todocli edit`
+
+Describe the command here
+
+```
+USAGE
+  $ todocli edit
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/edit.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/edit.js)_
 
 ## `todocli help [COMMAND]`
 
