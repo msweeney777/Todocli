@@ -12,7 +12,7 @@ class AddCommand extends Command {
       done: false,
       Created_date: Date(),
     }).write();
-    this.log(res)
+    //this.log(res)
   }
 }
 

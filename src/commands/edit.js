@@ -9,7 +9,8 @@ class EditCommand extends Command {
     } = this.parse(EditCommand)
     const res = await Todo.find({id: parseInt(id, 10)})
     .assign({task: task})
-    .write()
+    .assign({Edited_date: Date()})
+    .write() 
     this.log(res)
   }
 }
