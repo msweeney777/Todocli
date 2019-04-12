@@ -9,6 +9,7 @@ class UpdateCommand extends Command {
     } = this.parse(UpdateCommand)
     const res = await Todo.find({id: parseInt(id, 10)})
     .assign({done: true})
+    .assign({Completed_date: Date()})
     .write()
     const comp = await completed.push(res).write();
     this.log(res)

@@ -7,7 +7,8 @@ class RemoveCommand extends Command {
     const {
       flags : {id},
     } = this.parse(RemoveCommand)
-    const del = await deleted.push(Todo.find({id: parseInt(id, 10)})).write();
+    const del = await deleted.push(Todo.find({id: parseInt(id, 10)}).assign({Deleted_date: Date()}))
+      .write();
     const res = await Todo.remove({id: parseInt(id, 10)}).write();
     this.log(res);
   }

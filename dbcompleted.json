@@ -17,6 +17,13 @@
       "done": true,
       "Created_date": "Fri Apr 12 2019 13:08:43 GMT-0400 (Eastern Daylight Time)",
       "task": "changed task"
+    },
+    {
+      "task": "updated task",
+      "id": 1,
+      "done": true,
+      "Created_date": "Fri Apr 12 2019 13:41:39 GMT-0400 (Eastern Daylight Time)",
+      "Completed_date": "Fri Apr 12 2019 14:39:06 GMT-0400 (Eastern Daylight Time)"
     }
   ]
 }
