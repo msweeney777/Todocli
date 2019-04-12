@@ -1,5 +1,6 @@
 const {Command, flags} = require('@oclif/command')
 const {Todo} = require('../db');
+const {completed} = require('../dbcompleted');
 
 class UpdateCommand extends Command {
   async run() {
@@ -9,6 +10,7 @@ class UpdateCommand extends Command {
     const res = await Todo.find({id: parseInt(id, 10)})
     .assign({done: true})
     .write()
+    const comp = await completed.push(res).write();
     this.log(res)
   }
 }

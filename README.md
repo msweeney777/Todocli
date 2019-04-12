@@ -29,6 +29,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`todocli add`](#todocli-add)
+* [`todocli completed`](#todocli-completed)
 * [`todocli deleted`](#todocli-deleted)
 * [`todocli help [COMMAND]`](#todocli-help-command)
 * [`todocli remove`](#todocli-remove)
@@ -53,13 +54,13 @@ DESCRIPTION
 
 _See code: [src/commands/add.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/add.js)_
 
-## `todocli deleted`
+## `todocli completed`
 
 Describe the command here
 
 ```
 USAGE
-  $ todocli deleted
+  $ todocli completed
 
 OPTIONS
   -n, --name=name  name to print
@@ -67,6 +68,21 @@ OPTIONS
 DESCRIPTION
   ...
   Extra documentation goes here
+```
+
+_See code: [src/commands/completed.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/completed.js)_
+
+## `todocli deleted`
+
+Shows deleted tasks
+
+```
+USAGE
+  $ todocli deleted
+
+DESCRIPTION
+  ...
+  Shows all the tasks that have been deleted
 ```
 
 _See code: [src/commands/deleted.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/deleted.js)_

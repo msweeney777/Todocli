@@ -9,7 +9,8 @@ class AddCommand extends Command {
     const res = await Todo.push({
       task,
       id: Todo.value().length,
-      done: false
+      done: false,
+      Created_date: Date(),
     }).write();
     this.log(res)
   }
