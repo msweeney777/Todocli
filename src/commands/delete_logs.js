@@ -16,9 +16,9 @@ class DeleteLogsCommand extends Command {
   }
 }
 
-DeleteLogsCommand.description = `Erases the entire contents of the 'deleted' log
+DeleteLogsCommand.description = `Erases the entire contents of the 'deleted' 'completed' 'show' logs
 ...
-Erases the contents of the dbremove.json file
+Erases the contents of the dbremove.json, dbcompleted.json and db.json files 
 `
 
 module.exports = DeleteLogsCommand
