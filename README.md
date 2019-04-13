@@ -30,6 +30,7 @@ USAGE
 <!-- commands -->
 * [`todocli add`](#todocli-add)
 * [`todocli completed`](#todocli-completed)
+* [`todocli delete_logs`](#todocli-delete_logs)
 * [`todocli deleted`](#todocli-deleted)
 * [`todocli edit`](#todocli-edit)
 * [`todocli help [COMMAND]`](#todocli-help-command)
@@ -70,6 +71,24 @@ DESCRIPTION
 
 _See code: [src/commands/completed.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/completed.js)_
 
+## `todocli delete_logs`
+
+Describe the command here
+
+```
+USAGE
+  $ todocli delete_logs
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/delete_logs.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/delete_logs.js)_
+
 ## `todocli deleted`
 
 Shows deleted tasks
@@ -87,18 +106,19 @@ _See code: [src/commands/deleted.js](https://github.com/msweeney777/todocli/blob
 
 ## `todocli edit`
 
-Describe the command here
+Edits a pre-existing task
 
 ```
 USAGE
   $ todocli edit
 
 OPTIONS
-  -n, --name=name  name to print
+  -n, --id=id      task id
+  -n, --task=task  task
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Overwrites the pre-existing task and adds a new time stamp
 ```
 
 _See code: [src/commands/edit.js](https://github.com/msweeney777/todocli/blob/v0.0.0/src/commands/edit.js)_
