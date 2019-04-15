@@ -5,11 +5,11 @@ const {Todo} = require('../db');
 class ShowCommand extends Command {
   async run() {
     const res = await Todo.sortBy('id').value();
-    res.forEach(({id, task, done}) => {
+    res.forEach(({id, task, done, description}) => {
       this.log(
         `${chalk.magenta(id)} ${
           done ? chalk.green('DONE') : chalk.yellowBright('NOT DONE')
-        } : ${task}`
+        } - ${chalk.whiteBright(task)} : \n${description}`
       ) 
     })
   }
