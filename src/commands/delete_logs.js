@@ -5,11 +5,10 @@ const {Todo} = require('../db')
 
 class DeleteLogsCommand extends Command {
   async run() { 
-      await deleted.remove({done: false}).write();
-      await deleted.remove({done: true}).write();
-      await completed.remove({done: true}).write();
-      await Todo.remove({done: true}).write();
-      await Todo.remove({done: false}).write();
+    await Todo.remove({removal_tag: 0}).write();
+    await completed.remove({removal_tag: 0}).write();
+    await deleted.remove({removal_tag: 0}).write();
+
     //this.log(deleted);
     //this.log(completed);
     //this.log(Todo);

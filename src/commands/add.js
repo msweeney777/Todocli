@@ -11,6 +11,7 @@ class AddCommand extends Command {
       id: Todo.value().length,
       done: false,
       Created_date: Date(),
+      removal_tag: 0,
     }).write();
     this.log(res)
   }
